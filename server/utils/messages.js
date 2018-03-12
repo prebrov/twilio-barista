@@ -3,17 +3,17 @@ const { config } = require('../data/config');
 
 // available values: originalMessage, availableOptions
 const WRONG_ORDER_MESSAGES = [
-  'Seems like your order of "${originalMessage}" is not something we can serve. Possible orders are ${availableOptions}. Write \'I need help\' to get an overview of other commands.'
+  'Your order of "${originalMessage}" is not something we can serve. Here\'s our menu:' ${availableOptions}. Write \'I need help\' to get an overview of other commands.'
 ];
 
 // available values: product, orderNumber
 const EXISTING_ORDER_MESSAGES = [
-  "We're still making you a ${product}. Check order #${orderNumber} with the barista if you think there's something wrong."
+  "We are still working on your ${product}. Check order #${orderNumber} with the barista if you have not received any notification within 10 mins."
 ];
 
 // available values: product, orderNumber
 const ORDER_CREATED_MESSAGES = [
-  "Thanks for ordering a ${product} from the Twilio powered Coffee Shop. Your order number is #${orderNumber}. We'll text you back when it's ready. In the meantime check out this repo ${repoUrl} if you want to see how we built this app."
+  "Thanks for ordering your ${product} via Twilio-powered SMS. Your order number is ${orderNumber}. You will receive a notification when your order is ready."
 ];
 
 // available values: product, orderNumber
@@ -23,7 +23,7 @@ const ORDER_CANCELLED_MESSAGES = [
 
 // available values: product, orderNumber
 const ORDER_READY_MESSAGES = [
-  'Your ${product} is ready. You can collect it from the coffee shop right away, ask for order number #${orderNumber}.'
+  'Your ${product} is ready! Come pick it up at 2/F Twilio coffee bar, ask for order #${orderNumber}. Click here to see how we built this coffee ordering app: ${repoUrl}'
 ];
 
 // available values:
