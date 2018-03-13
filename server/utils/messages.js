@@ -88,7 +88,7 @@ function getOrderCancelledMessage(product, orderNumber) {
 
 function getOrderReadyMessage(product, orderNumber) {
   const tmpl = template(pickRandom(ORDER_READY_MESSAGES));
-  return tmpl({ product, orderNumber });
+  return tmpl({ product, orderNumber, repoUrl });
 }
 
 function getSystemOfflineMessage() {
