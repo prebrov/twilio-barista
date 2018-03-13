@@ -87,6 +87,7 @@ function getOrderCancelledMessage(product, orderNumber) {
 }
 
 function getOrderReadyMessage(product, orderNumber) {
+  const repoUrl = config().repoUrl;
   const tmpl = template(pickRandom(ORDER_READY_MESSAGES));
   return tmpl({ product, orderNumber, repoUrl });
 }
