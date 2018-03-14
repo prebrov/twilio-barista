@@ -3,7 +3,7 @@ const { config } = require('../data/config');
 
 // available values: originalMessage, availableOptions
 const WRONG_ORDER_MESSAGES = [
-  'Your order of "${originalMessage}" is not something we can serve. Here\'s our menu: ${availableOptions}. Write \'I need help\' to get an overview of other commands.'
+  'Your order of "${originalMessage}" is not something we can serve. Here\'s our menu: ${availableOptions}.'
 ];
 
 // available values: product, orderNumber
